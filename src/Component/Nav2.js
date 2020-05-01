@@ -1,16 +1,14 @@
 import React from "react"
 import "../App.css";
 import { Link } from "react-router-dom";
-import cheesepizza from "../Images/cheesepizza.jpg"
 
 
 
 
 
-function Home() {
+function Nav2() {
     return(    
-        <div>
-             <nav className="a:link">
+     <nav className="a:link">
         <ul className="home">
             <Link to="/Pizza">
                 <h1>Pizza</h1>
@@ -32,12 +30,6 @@ function Home() {
             </Link>        
         </ul>
       </nav>
-        <img src={cheesepizza} className="banner"/>
-        </div>
-
-
-        
-    
     
     )
 
@@ -45,4 +37,4 @@ function Home() {
 
 }
 
-export default Home;
+export default Nav2;
