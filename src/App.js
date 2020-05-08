@@ -3,13 +3,21 @@ import Home from "./Pages/Home.js";
 import Nav from "./Component/Nav.js";
 import Menu from "./Pages/Menu.js"
 import Specials from "./Pages/Specials.js"
+import Pizza from "./Pages/Pizza.js"
 import Nav2 from "./Component/Nav2.js"
+import Sandwiches from './Pages/Sandwiches.js';
+import Sides from './Pages/Sides.js';
+import Drinks from './Pages/Drinks.js';
+import Extras from "./Pages/Extras.js";
+import Pasta from "./Pages/Pasta.js";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+
+
 
 export default function App() {
   
@@ -20,7 +28,12 @@ export default function App() {
         <Switch>
             <Route path="/menu" component={Menu}/>
             <Route path="/specials" component={Specials}/>
-            
+            <Route path="/pizza" component={Pizza}/>
+            <Route path="/pasta" component={Pasta}/>
+            <Route path="/sandwiches" component={Sandwiches}/>
+            <Route path="/sides" component={Sides}/>
+            <Route path="/drinks" component={Drinks}/>
+            <Route path="/extras" component={Extras}/>
             <Route path="/" component={Home}/>
         </Switch>
         

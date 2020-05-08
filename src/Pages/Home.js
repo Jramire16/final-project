@@ -11,7 +11,7 @@ function Home() {
     return(    
         <div>
              <nav className="a:link">
-        <ul className="home">
+        <ul className="nav2">
             <Link to="/Pizza">
                 <h1>Pizza</h1>
             </Link> 
@@ -32,7 +32,14 @@ function Home() {
             </Link>        
         </ul>
       </nav>
-        <img src={cheesepizza} className="banner"/>
+      <div className="home">
+          <img src={cheesepizza} className="banner"/>
+          <img src={cheesepizza} className="banner"/>
+      </div>
+      <div className="home">
+          
+      </div>
+      
         </div>
 
 

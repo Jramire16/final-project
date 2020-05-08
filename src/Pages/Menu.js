@@ -9,7 +9,7 @@ function Menu(){
     return(
         <div>
                 <nav className="a:link">
-        <ul className="home">
+        <ul className="nav2">
             <Link to="/Pizza">
                 <h1>Pizza</h1>
             </Link> 
