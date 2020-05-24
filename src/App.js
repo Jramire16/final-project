@@ -38,7 +38,7 @@ export default function App() {
             <Route path="/sides" component={Sides}/>
             <Route path="/drinks" component={Drinks}/>
             <Route path="/extras" component={Extras}/>
-            <Route path="/" component={Home}/>
+            <Route path="/home" component={Home}/>
         </Switch>
         
       </div>
