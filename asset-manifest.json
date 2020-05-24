@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/final-project/static/css/main.2a1d65a0.chunk.css",
+    "main.js": "/final-project/static/js/main.2b63abd0.chunk.js",
+    "main.js.map": "/final-project/static/js/main.2b63abd0.chunk.js.map",
+    "runtime-main.js": "/final-project/static/js/runtime-main.2e68b758.js",
+    "runtime-main.js.map": "/final-project/static/js/runtime-main.2e68b758.js.map",
+    "static/css/2.05a0ae32.chunk.css": "/final-project/static/css/2.05a0ae32.chunk.css",
+    "static/js/2.16f9d2e3.chunk.js": "/final-project/static/js/2.16f9d2e3.chunk.js",
+    "static/js/2.16f9d2e3.chunk.js.map": "/final-project/static/js/2.16f9d2e3.chunk.js.map",
+    "index.html": "/final-project/index.html",
+    "precache-manifest.6b08b74bced25194c27b0f6e53a54dea.js": "/final-project/precache-manifest.6b08b74bced25194c27b0f6e53a54dea.js",
+    "service-worker.js": "/final-project/service-worker.js",
+    "static/css/2.05a0ae32.chunk.css.map": "/final-project/static/css/2.05a0ae32.chunk.css.map",
+    "static/css/main.2a1d65a0.chunk.css.map": "/final-project/static/css/main.2a1d65a0.chunk.css.map",
+    "static/js/2.16f9d2e3.chunk.js.LICENSE.txt": "/final-project/static/js/2.16f9d2e3.chunk.js.LICENSE.txt",
+    "static/media/cheesepizza.jpg": "/final-project/static/media/cheesepizza.67ecdbfe.jpg",
+    "static/media/hawaiianpizza.jpg": "/final-project/static/media/hawaiianpizza.39077f48.jpg",
+    "static/media/pepperonipizza.jpg": "/final-project/static/media/pepperonipizza.53e76c18.jpg",
+    "static/media/sausagepizza.jpg": "/final-project/static/media/sausagepizza.65fa5a85.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2e68b758.js",
+    "static/css/2.05a0ae32.chunk.css",
+    "static/js/2.16f9d2e3.chunk.js",
+    "static/css/main.2a1d65a0.chunk.css",
+    "static/js/main.2b63abd0.chunk.js"
+  ]
+}
