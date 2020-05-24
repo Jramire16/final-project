@@ -60,8 +60,10 @@ function Cart({cartProps, productAmount, removeProduct}){
 
 
                 <div className="total">
-                Total: $<span className="total">{products.numbers * products.price}</span>
+                Price: $<span>{products.numbers * products.price}</span>
                 </div>
+                
+               
             </div>
                 
             </Fragment>
@@ -71,18 +73,8 @@ function Cart({cartProps, productAmount, removeProduct}){
 
     return(
         <div className="plate">
-            <div >
-
-            </div>
-
-            <div className="plate">
-                {productsInCart}
-            </div>
-
-            <div >
-               
-            </div>
-
+            {productsInCart}
+           
         </div>
     )
 }

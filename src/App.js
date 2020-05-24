@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Home from "./Pages/Home.js";
 import Nav from "./Component/Nav.js";
 import Menu from "./Pages/Menu.js"
@@ -38,7 +38,7 @@ export default function App() {
             <Route path="/sides" component={Sides}/>
             <Route path="/drinks" component={Drinks}/>
             <Route path="/extras" component={Extras}/>
-            <Route path="/home" component={Home}/>
+            <Route path="/" component={Home}/>
         </Switch>
         
       </div>

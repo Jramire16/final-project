@@ -90,22 +90,22 @@ export default (state = initialState, action) => {
                 case DECREASE_AMOUNT:
                     productSelected = { ...state.products[action.payload]}
                     let newCartCost = 0;
-                    let newCartNumbers = 0;
+                    let newCartAmount = 0;
                     if(productSelected.numbers === 0){
                         productSelected.numbers = 0;
                         newCartCost = state.cartCost
-                        newCartNumbers = state.cartNumber
+                        newCartAmount = state.cartNumber
                     
                     }
                     else{
                         productSelected.numbers -= 1;
                         newCartCost = state.cartCost - state.products[action.payload].price;
-                        newCartNumbers = state.cartNumber - 1
+                        newCartAmount = state.cartNumber - 1
                     }
 
                     return{
                         ...state,
-                        cartNumber: newCartNumbers,
+                        cartNumber: newCartAmount,
                         cartCost: newCartCost,
                         products: {
                             ...state.products,
@@ -125,14 +125,14 @@ export default (state = initialState, action) => {
                             cartNumber: state.cartNumber - numbersBackup,
                             cartCost: state.cartCost - ( numbersBackup * productSelected.price),
                             products: {
-                                ...state.products,
+                                ...state,
                                 [action.payload]: productSelected
                             }
                         }
 
             
             
-        default:
+         default:
             return {
                 ...state
             }

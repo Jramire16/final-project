@@ -1,26 +1,26 @@
 import { INCREASE_AMOUNT, DECREASE_AMOUNT, REMOVE_PRODUCT } from "./Type"
 
 
-export const productAmount = (action, name) =>{
+export const productAmount = (itemName, action) =>{
     return(dispatch) => {
         console.log("Inside product")
         console.log("The action is ", action)
-        console.log("The product is ", name)
+        console.log("The product is ", itemName)
 
         dispatch({
-            type: action === "increase" ? INCREASE_AMOUNT : DECREASE_AMOUNT,
-            payload: name
+            type: action === "Increase" ? INCREASE_AMOUNT : DECREASE_AMOUNT,
+            payload: itemName
         })
     }
 }
-export const removeProduct = (action, name) => {
+export const removeProduct = (action, itemName) => {
     return(dispatch) => {
         console.log("Inside product")
-        console.log("Product remove ", name)
+        console.log("Product remove ", itemName)
 
         dispatch({
             type: REMOVE_PRODUCT,
-            payload: name
+            payload: itemName
         });
     }
 }
