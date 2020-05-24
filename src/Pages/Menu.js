@@ -1,54 +1,58 @@
 import React from "react"
 import "../App.css"
 import cheesepizza from "../Images/cheesepizza.jpg"
-import { Link } from "react-router-dom";
+import pepperonipizza from "../Images/pepperonipizza.jpg"
+import sausagepizza from "../Images/sausagepizza.jpg"
+import hawaiianpizza from "../Images/hawaiianpizza.jpg"
+import Nav2 from "../Component/Nav2"
+import { connect } from 'react-redux' 
+import { addTo } from '../Component/AddTo' 
 
-
-
-function Menu(){
+function Menu(props){
     return(
         <div>
                 <nav className="a:link">
-        <ul className="nav2">
-            <Link to="/Pizza">
-                <h1>Pizza</h1>
-            </Link> 
-            <Link to="/Sandwiches">
-                <h1>Sandwiches</h1>
-            </Link>                
-            <Link to="/Pasta">
-                <h1>Pasta</h1>
-            </Link>
-            <Link to="/Sides">
-                <h1>Sides</h1>
-            </Link>
-            <Link to="/Drinks">
-                <h1>Drinks</h1>
-            </Link>
-            <Link to="/Extras">
-                 <h1>Extras</h1>
-            </Link>        
-        </ul>
+        <Nav2 />
       </nav>
+      <div >  
       <div className="box">  
             <img src={cheesepizza}/>
-            <p>Soijdodadn</p>
-
-            </div>
-
-            <div className="box">  
-            <img src={cheesepizza}/>
+            <span>$12</span>
+            <a onClick={() => props.addTo('cheesepizza')} >
             <p className="button">Add to cart</p>
+            </a>
             </div>
-          
-            <div className="box">  
-            <img src={cheesepizza}/>
 
+            <div className="box">  
+            <img src={pepperonipizza}/>
+            <span>$15</span>
+            <a onClick={() => props.addTo('pepperonipizza')} >
+            <p className="button">Add to cart</p>
+            </a>
             </div>
+
+            <div className="box">  
+            <img src={sausagepizza}/>
+            <span>$15</span>
+            <a onClick={() => props.addTo('sausagepizza')} >
+            <p className="button">Add to cart</p>
+            </a>
+            </div>
+
+            <div className="box">  
+            <img src={hawaiianpizza}/>
+            <span>$17</span>
+            <a onClick={() => props.addTo('hawaiianpizza')} >
+            <p className="button">Add to cart</p>
+            </a>
+            </div>
+            
+        </div>
+            
            
       </div>
         
     )
 }
 
-export default Menu;
+export default connect(null, {addTo})(Menu);

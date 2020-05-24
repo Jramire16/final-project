@@ -20,18 +20,17 @@ a:visited{
 
 .nav{
   
-  display: flex;
+  display: inline-block;
   justify-content: space-evenly;
   align-items: left;
   list-style: none;
   background: rgb(89, 132, 211);
-  min-height: 10vh;
-  text-align: left;
-  
+  color: white;
+  padding-left: 22%;
+  padding-right: 21.7%;
 }
 
 .nav-links{
-  
   max-width: 30% 30%;
   display: flex;
   align-items: left;
@@ -39,20 +38,36 @@ a:visited{
   margin-right: auto;
   font-size: 25px;
   justify-content: space-between;
-  padding: 10px;
+  padding: 10px 50px;
   font-weight: bold;
+  color: black;
+ 
+}
+
+.nav2{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 15px;
+  list-style: none;
+  background: whitesmoke;
+  align-items: left;
+  max-width: 100%;
+  padding: 20px 20px;
+  
+  color: black; 
   
 }
 
 .box{
   border-radius: 10px;
-  margin: 20px;
+  margin: 20px 20px 0px 100px;
   font-size: 13px;
   line-height: 14px;
   border: 1px solid #ccc;
-  width: 325px;
+  width: 305px;
   float: left;
-  
+  background-color: white;
+  height: 300px;
 }
 .box img{
   display: center;
@@ -68,31 +83,11 @@ a:visited{
   text-align: center;
   font-size: 10px;
   border: 1px solid #ccc;
-  background-color: green;
+  background-color: rgb(128, 0, 0);
   padding: 10px;
-  
-}
-.nav2{
-  display: flex;
-  justify-content: space-evenly;
-  font-size: 12px;
-  list-style: none;
-  background: whitesmoke;
-  align-items: left;
-  max-width: 100%;
-  padding: 20px 20px;
+  color: black;
 }
 
-.cart{
-  display: center;
-}
-.menu{
-  display: center;
-}
-.specials{
-  display: center;
-
-}
 .banner{
   display: center;
   margin: 0 auto;
@@ -101,4 +96,23 @@ a:visited{
   overflow: hidden;
   position: relative;
   
+}
+.plate{
+  display: center;
+  padding: 10px 150px 0px 10px;
+  position: left;
+  justify-content: left;
+ 
+}
+
+.minibox{
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1px;
+  background-color: white;
+
+}
+
+.total{
+  text-align: right;
+  size: 10px;
 }
